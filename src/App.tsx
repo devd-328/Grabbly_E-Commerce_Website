@@ -1,4 +1,3 @@
-import React from 'react';
 import { ShoppingBag, Star, Truck, Shield, RefreshCw, Heart } from 'lucide-react';
 
 function App() {
@@ -36,7 +35,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-white">Gabbly</h1>
+              {/* Removed Gabbly header line as requested */}
             </div>
             
             <nav className="hidden md:flex space-x-8">
@@ -76,7 +75,7 @@ function App() {
           <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Discover the latest trends in fashion. Elegant designs that define your style.
           </p>
-          <button className="px-8 py-3 text-lg font-medium text-white transition-colors" style={{backgroundColor: '#2596be'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#1e7a9a'} onMouseLeave={(e) => e.target.style.backgroundColor = '#2596be'}>
+          <button className="px-8 py-3 text-lg font-medium text-white transition-colors" style={{backgroundColor: '#2596be'}} onMouseEnter={e => ((e.target as HTMLButtonElement).style.backgroundColor = '#1e7a9a')} onMouseLeave={e => ((e.target as HTMLButtonElement).style.backgroundColor = '#2596be')}>
             Shop Now
           </button>
         </div>
@@ -288,7 +287,7 @@ function App() {
               placeholder="Enter your email"
               className="flex-1 px-4 py-3 rounded-none border border-gray-600 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:border-white"
             />
-            <button className="px-8 py-3 font-medium text-white transition-colors" style={{backgroundColor: '#2596be'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#1e7a9a'} onMouseLeave={(e) => e.target.style.backgroundColor = '#2596be'}>
+            <button className="px-8 py-3 font-medium text-white transition-colors" style={{backgroundColor: '#2596be'}} onMouseEnter={e => ((e.target as HTMLButtonElement).style.backgroundColor = '#1e7a9a')} onMouseLeave={e => ((e.target as HTMLButtonElement).style.backgroundColor = '#2596be')}>
               Subscribe
             </button>
           </div>
@@ -300,7 +299,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-lg font-bold text-white mb-4">Gabbly</h4>
+              <h4 className="text-lg font-bold text-white mb-4">Grabbly</h4>
               <p className="text-gray-300 text-sm">
                 Your destination for premium fashion and timeless style.
               </p>
@@ -338,7 +337,7 @@ function App() {
           </div>
           
           <div className="border-t border-gray-800 pt-8 mt-8 text-center text-sm text-gray-300">
-            <p>&copy; 2025 Gabbly. All rights reserved.</p>
+              <p>&copy; 2025 Grabbly. All rights reserved.</p>
           </div>
         </div>
       </footer>
